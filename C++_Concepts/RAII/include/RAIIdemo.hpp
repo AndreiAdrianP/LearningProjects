@@ -2,22 +2,21 @@
 #include <memory>
 #include <vector>
 
-class Resource {
+class FileHandle {
     private:
     int id_;
     public:
-        Resource(int resource_id) : id_(resource_id){
+        FileHandle(int resource_id) : id_(resource_id){
             std::cout<<"--->Resource "<< id_ <<" aquired.\n";
         }
-        ~Resource()
+        ~FileHandle()
         {
             std::cout<<"\t\t\t<----Resource "<<id_<<" released.\n";
         }
-        void operate(){
-            std::cout<<"\t [ Resource: "<<id_<<" ] Operating.";
-        }
+        int get_Id() const
+        {return id_;}
 
 };
 
-void unique_ptr_demo();
-void shared_ptr_demo();
+std::unique_ptr<FileHandle> process_data();
+void print_status( const FileHandle& resource);
