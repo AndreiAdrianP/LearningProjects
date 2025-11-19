@@ -1,0 +1,1 @@
+This demo illustrates the basics of bash scripting, CMake configuration and the core principle of RAII: linking the lifecycle of a resource to the lifecycle of a stack-allocated object.
