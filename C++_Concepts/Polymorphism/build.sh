@@ -32,7 +32,7 @@ configure_project(){
     echo "Configuration succesful."
 }
 
-#Build the profect------
+#Build the project------
 build_project(){
     echo "---Building project---"
     cd "$BUILD_DIR" || exit 1
