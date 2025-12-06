@@ -1,0 +1,1 @@
+This demo is used to demonstrate the basic Google test handling and the separation of CMake logic for building the executable as well as the tests suite.
